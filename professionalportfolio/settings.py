@@ -125,7 +125,7 @@ USE_TZ = True
 
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'professionalportfolio\static')
+    os.path.join(BASE_DIR, 'professionalportfolio/static')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -135,6 +135,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
